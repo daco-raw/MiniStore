@@ -1,0 +1,13 @@
+//  SETTINGS
+@import './settings/_variables.scss';
+@import './settings/_global.scss';
+
+//  VIEWs
+@import './layout/pages/_home.scss';
+@import './layout/_navegation.scss';
+@import './layout/_footer.scss';
+@import './layout/pages/_form.scss';
+
+
+// break-point
+@import './layout/_break-point.scss';

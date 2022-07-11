@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= contactanos%></title>
+    <%- include('./partials/head.ejs')%>
+</head>
+<body>
+    <%- include('./partials/navBar.ejs')%>
+    <h1 class="title3">Quieres contactarte con nuestro equipo?</h1>
+
+    <div class="container-form">
+      <div class="content-form">
+        <h1>Formulario de contacto</h1>
+        <form action="">
+          <label for="name">Nombre</label>
+          <input type="text" id="name">
+          <label for="lastName">Apellido</label>
+          <input type="text" id="lastame">
+          <label for="email">Correo Electronico</label>
+          <input type="email" require><br>
+          <textarea rows="2" cols="30" placeholder="Envia tu mensaje..."></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="content-img"></div>
+    </div>
+
+
+
+    <%- include('./partials/footer.ejs')%>
+</body>
+</html>

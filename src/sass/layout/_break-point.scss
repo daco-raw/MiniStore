@@ -1,0 +1,114 @@
+// mobile
+@media screen and (max-width:580px) {
+    .nav-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        transition: all .1s;
+
+        .button-responsive__menu {
+            position: absolute;
+            top: -15px;
+            right: 0;
+            margin: 40px;
+            text-align: right;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        .button-responsive__menu:hover {
+            color: map-get($colors, 'warn');
+        }
+        nav {
+            position: relative;
+            top: 0;
+            right: -100%;
+            background: map-get($colors, 'dark1');
+            outline: none;
+            height: 100vh;
+            width: 100%;
+            margin-top: 70px;
+            text-align: center;
+            a {
+                display: block;
+                padding: 15px;
+                font-size: 25px;
+            }
+        }
+
+        .button-responsive__menu:hover ~ nav {
+            transition: all 1.5s;
+            right: 0;
+        }
+        .signIn {display: none;}
+    }
+
+    //footer
+    .payment-rrss {
+        display: none;
+    }
+}
+
+// media tablet
+@media screen and (max-width:770px) {
+
+    .nav-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        transition: all .1s;
+
+        .button-responsive__menu {
+            display: block;
+            position: absolute;
+            top: -15px;
+            right: 0;
+            margin: 40px;
+            text-align: right;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        .button-responsive__menu:hover {
+            color: map-get($colors, 'warn');
+        }
+        nav {
+            position: relative;
+            top: 0;
+            right: -100%;
+            background: map-get($colors, 'dark1');
+            outline: none;
+            height: 100vh;
+            width: 500px;
+            margin-top: 70px;
+            text-align: center;
+            a {
+                display: block;
+                padding: 15px;
+                font-size: 25px;
+            }
+        }
+
+        .button-responsive__menu:hover ~ nav {
+            transition: all 1.5s;
+            right: 0;
+        }
+        .signIn {display: none;}
+    }
+}
+
+// grand tablet
+@media screen and (max-width:990px) {
+    .card-img__blog1,
+    .card-img__blog2,
+    .card-img__blog3 {
+        margin: 3px;
+    }
+    .nav-container {
+        nav {
+            display: block;
+        }
+        .signIn {display: none;}
+    }
+
+}
